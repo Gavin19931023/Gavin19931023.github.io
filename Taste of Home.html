@@ -1,0 +1,583 @@
+<!--Name: Xuesong Gao
+Student ID: 214276283 
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Taste Of Home</title>
+<link rel="stylesheet" href="themes/Mytheme.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<!--This is homepage-->
+<div data-role="page" id="page1" data-theme="d">
+	<!--input the header information of the page-->
+	<div data-role="header">
+		<h1>Gavin's restaurant</h1>
+    </div>  	 	
+    <!--input the content of the page-->
+	<div role="main" class="ui-content">
+    	<div data-role="navbar">
+      		<ul>
+				<li>
+          			<a href="#page1">Home</a>
+        		</li>
+        		<!--a link to go menu page-->
+				<li>
+          			<a href="#page4">Menu</a>
+        		</li>
+        		<!--a link to go reservation page-->
+				<li>
+          			<a href="#page5">Reservations</a>
+        		</li>
+      		</ul>
+    	</div>
+    	<div data-role="navbar">
+      		<ul>
+        		<!--a link to call-->
+				<li>
+          			<a href="tel:0452355069">Call</a>
+        		</li>
+        		<!--a link to go feedback page-->
+				<li>
+        			<a href="#page2" >Feedback</a>
+        		</li>
+        		<!--a link to go about us page-->
+				<li>
+         			<a href="#page3">About us</a>
+        		</li>
+      		</ul>
+    	</div>
+        	<h1 align="center"><font color= "#ff8000">Welcome to The Taste Of Home</font>
+            </h1>
+         	<!--show the background-image-->
+			<img style="width:100%;" src="images/dumplings.jpg" is="image">
+    </div>
+        <div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+</div>
+<!--This is the contact page, user can rate this web application and give advice-->
+<div data-role="page" id="page2" data-theme="d">
+    <div data-role="header">
+        <h1>Gavin's restaurant</h1>
+	</div>	
+    <div role="main" class="ui-content">
+		<div data-role="navbar">
+		  <ul>
+			<li>
+			  <a href="#page1">Home</a>
+			</li>
+			<li>
+			  <a href="#page4">Menu</a>
+			</li>
+			<li>
+			  <a href="#page5">Reservations</a>
+			</li>
+		  </ul>
+		</div>
+		<div data-role="navbar">
+		  <ul>
+			<li>
+			  <a href="tel:0452355069">Call</a>
+			</li>
+			<li>
+			 <a href="#page2" >Feedback</a>
+			</li>
+			<li>
+			 <a href="#page3">About us</a>
+			</li>
+		  </ul>
+		</div>
+		<!--gives users to rate this application and give advice-->
+    	<h1>Contact me</h1>
+        <form>
+        <label for="essay">Tell us what you think</label>
+        <textarea name="essay" id="essay" placeholder="Tell us how great we are"></textarea>
+        <label for="rate">Rate us out of 5</label>
+        <input type="range" name="rate" id="rate" min="0" max="5"/>
+        <input type="submit" name="go" id="go" value="Rate my app" />
+        </form>
+    </div>   
+    <div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+    </div>
+</div>
+<!--This is the page of "about us", gives the basic information about this restaurant and developer-->
+<div data-role="page" id="page3" data-theme="d">
+    <div data-role="header">
+        <h1>Gavin's restaurant</h1>
+	</div>
+    <div role="main" class="ui-content">
+		<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="#page1">Home</a>
+				</li>
+				<li>
+					<a href="#page4">Menu</a>
+				</li>
+				<li>
+					<a href="#page5">Reservations</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="tel:0452355069">Call</a>
+				</li>
+				<li>
+					<a href="#page2" >Feedback</a>
+				</li>
+				<li>
+					<a href="#page3">About us</a>
+				</li>
+			</ul>
+		</div>
+		<!--gives the basic information about restaurant and developer-->
+		<h1 align="center"><font color= "#ff8000">About Taste Of Home</font></h1>
+		<p>The Taste Of Home is a chinese restaurant with a lot of traditional and delicious chinese food like dumping, noodles.</p>
+		<h2>Opening Hours</h2>
+        <p>Monday-Friday:10:00am-10:00pm</p>
+        <p>Weekend:5:00pm-10:00pm</p>
+        <h2>Address</h2>
+        <p>11 farleigh avenue, Burwood, VIC3125</p>
+        <h1 align="center"><font color= "#ff8000">About the developer</font></h1>
+        <img style="width:10%;" src="images/me.jpg" is="image">
+        <h2>Name: Xuesong Gao</h2>
+        <h2>Student ID: 214276283</h2>
+    </div>
+    <div data-role="footer">
+		<h2>&copy; Gavin 2015</h2>
+    </div>
+</div>
+<!--This is the menu page, customer can look though everything we serve-->
+<div data-role="page" id="page4" data-theme="d">
+	<!--this is the recipes of an selected item on the menu-->
+	<div data-role="panel" id="myPanel1"> 
+		<h2 align="center"><font color= "#ff8000">Boiled pork dumpling</font></h2>
+		<img style="width:100%;" src="images/pork dumpling.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+		</div>
+	</div> 
+	<div data-role="panel" id="myPanel2"> 
+		<h2 align="center"><font color= "#ff8000">Boiled dumpling with Chinese chive</font></h2>
+		<img style="width:100%;" src="images/2.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+		</div>
+	</div> 
+	<div data-role="panel" id="myPanel3"> 
+		<h2 align="center"><font color= "#ff8000">Boiled beef dumpling</font></h2>
+		<img style="width:100%;" src="images/3.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel4"> 
+		<h2 align="center"><font color= "#ff8000">Boiled chicken and prawn dumpling</font></h2>
+		<img style="width:100%;" src="images/4.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel5"> 
+		<h2 align="center"><font color= "#ff8000">Boiled dumpling with shredded sea foods</font></h2>
+		<img style="width:100%;" src="images/5.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel6"> 
+		<h2 align="center"><font color= "#ff8000">Boiled dumpling with chilli/chili oil</font></h2>
+		<img style="width:100%;" src="images/6.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel7"> 
+		<h2 align="center"><font color= "#ff8000">Slightly fried pork dumpling</font></h2>
+		<img style="width:100%;" src="images/7.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel8"> 
+		<h2 align="center"><font color= "#ff8000">Slightly fried beef dumpling</font></h2>
+		<img style="width:100%;" src="images/8.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel9"> 
+		<h2 align="center"><font color= "#ff8000">Noodles with meat slices in thick gravy</font></h2>
+		<img style="width:100%;" src="images/9.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanell0"> 
+		<h2 align="center"><font color= "#ff8000">Stewed noodles</font></h2>
+		<img style="width:100%;" src="images/10.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanell1"> 
+		<h2 align="center"><font color= "#ff8000">Stewed noodles with chicken shreds</font></h2>
+		<img style="width:100%;" src="images/11.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanell2"> 
+		<h2 align="center"><font color= "#ff8000">Cold noodles with sauce</font></h2>
+		<img style="width:100%;" src="images/12.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanell3"> 
+		<h2 align="center"><font color= "#ff8000">Noodles with shredded meat</font></h2>
+		<img style="width:100%;" src="images/13.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanell4"> 
+		<h2 align="center"><font color= "#ff8000">Noodles with chopped meat in fried bean sauce</font></h2>
+		<img style="width:100%;" src="images/14.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanell5"> 
+		<h2 align="center"><font color= "#ff8000">Fried noodles with sea foods </font></h2>
+		<img style="width:100%;" src="images/15.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanell6"> 
+		<h2 align="center"><font color= "#ff8000">Fried noodles with vegetables</font></h2>
+		<img style="width:100%;" src="images/16.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel17"> 
+		<h2 align="center"><font color= "#ff8000">Rice with quick-fry fish slices with distilled grains sauce</font></h2>
+		<img style="width:100%;" src="images/17.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanell8"> 
+		<h2 align="center"><font color= "#ff8000">Rice with braised shrimp meat</font></h2>
+		<img style="width:100%;" src="images/18.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanell9"> 
+		<h2 align="center"><font color= "#ff8000">Rice with stir-fried diced pork with chilli sauce and peanuts</font></h2>
+		<img style="width:100%;" src="images/19.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel20"> 
+		<h2 align="center"><font color= "#ff8000">Rice with stir-fried boiled pork slices with hot sauce</font></h2>
+		<img style="width:100%;" src="images/20.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel21"> 
+		<h2 align="center"><font color= "#ff8000">Rice with fried pork slices with green pepper</font></h2>
+		<img style="width:100%;" src="images/21.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel22"> 
+		<h2 align="center"><font color= "#ff8000">Rice with fried pork fillet slices with sweet and sour sauce</font></h2>
+		<img style="width:100%;" src="images/22.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel23"> 
+		<h2 align="center"><font color= "#ff8000">Rice with mushroom omelette</font></h2>
+		<img style="width:100%;" src="images/23.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel24"> 
+		<h2 align="center"><font color= "#ff8000">Stewed rice</font></h2>
+		<img style="width:100%;" src="images/24.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel25"> 
+		<h2 align="center"><font color= "#ff8000">Fried rice with bacon</font></h2>
+		<img style="width:100%;" src="images/25.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel26"> 
+		<h2 align="center"><font color= "#ff8000">Fried rice with scrambled eggs</font></h2>
+		<img style="width:100%;" src="images/26.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel27"> 
+		<h2 align="center"><font color= "#ff8000">Coke</font></h2>
+		<img style="width:100%;" src="images/27.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel28"> 
+		<h2 align="center"><font color= "#ff8000">Sprite</font></h2>
+		<img style="width:100%;" src="images/28.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel29"> 
+		<h2 align="center"><font color= "#ff8000">Solo</font></h2>
+		<img style="width:100%;" src="images/29.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel30"> 
+		<h2 align="center"><font color= "#ff8000">Orange juice</font></h2>
+		<img style="width:100%;" src="images/30.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel31"> 
+		<h2 align="center"><font color= "#ff8000">Apple juice</font></h2>
+		<img style="width:100%;" src="images/31.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel32"> 
+		<h2 align="center"><font color= "#ff8000">Fenta</font></h2>
+		<img style="width:100%;" src="images/32.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+	<div data-role="panel" id="myPanel33"> 
+		<h2 align="center"><font color= "#ff8000">Beer</font></h2>
+		<img style="width:100%;" src="images/33.jpg" is="image">
+		<p align="right">---$9.99</p>
+		<div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+        </div>
+	</div> 
+    <div data-role="header">
+        <h1>Gavin's restaurant</h1>
+	</div>
+    <div role="main" class="ui-content">
+		<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="#page1">Home</a>
+				</li>
+				<li>
+					<a href="#page4">Menu</a>
+				</li>
+				<li>
+					<a href="#page5">Reservations</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="tel:0452355069">Call</a>
+				</li>
+				<li>
+					<a href="#page2" >Feedback</a>
+				</li>
+				<li>
+					<a href="#page3">About us</a>
+				</li>
+			</ul>
+		</div>
+		<h1 align="center"><font color= "#ff8000">Welcom to The Taste Of Home</font></h1>
+		<!--this is the menu-->
+		<div data-role="collapsible">
+        	<h1>Dunpline</h1>
+            <a href="#myPanel1"><p>Boiled pork dumpling</p></a>
+            <a href="#myPanel2"><p>Boiled dumpling with Chinese chive</p></a>
+            <a href="#myPanel3"><p>Boiled beef dumpling</p></a>
+            <a href="#myPanel4"><p>Boiled chicken and prawn dumpling</p></a>
+            <a href="#myPanel5"><p>Boiled dumpling with shredded sea foods</p></a>
+            <a href="#myPanel6"><p>Boiled dumpling with chilli/chili oil</p></a>
+            <a href="#myPanel7"><p>Slightly fried pork dumpling</p></a>
+            <a href="#myPanel8"><p>Slightly fried beef dumpling</p></a>
+        </div>
+		<div data-role="collapsible">
+        	<h1>Noodle</h1>
+            <a href="#myPanel9"><p>Noodles with meat slices in thick gravy</p></a>
+            <a href="#myPanell0"><p>Stewed noodles</p></a>
+            <a href="#myPanell1"><p>Stewed noodles with chicken shreds</p></a>
+            <a href="#myPanell2"><p>Cold noodles with sauce</p></a>
+            <a href="#myPanell3"><p>Noodles with shredded meat </p></a>
+            <a href="#myPanell4"><p>Noodles with chopped meat in fried bean sauce</p></a>
+            <a href="#myPanell5"><p>Fried noodles with sea foods </p></a>
+            <a href="#myPanell6"><p>Fried noodles with vegetables</p></a>
+        </div>
+		<div data-role="collapsible">
+            <h1>Rice with dishes</h1>
+            <a href="#myPanel17"><p>Rice with quick-fry fish slices with distilled grains sauce </p></a>
+            <a href="#myPanell8"><p>Rice with braised shrimp meat</p></a>
+            <a href="#myPanell9"><p>Rice with stir-fried diced pork with chilli sauce and peanuts</p></a>
+            <a href="#myPanel20"><p>Rice with stir-fried boiled pork slices with hot sauce</p></a>
+            <a href="#myPanel21"><p>Rice with fried pork slices with green pepper</p></a>
+            <a href="#myPanel22"><p>Rice with fried pork fillet slices with sweet and sour sauce</p></a>
+            <a href="#myPanel23"><p>Rice with  mushroom omelette/omelet</p></a>
+            <a href="#myPanel24"><p>Stewed rice</p></a>
+            <a href="#myPanel25"><p>Fried rice with bacon</p></a>
+            <a href="#myPanel26"><p>Fried rice with scrambled eggs</p></a>
+        </div>
+		<div data-role="collapsible">
+            <h1>Drinks</h1>
+            <a href="#myPanel27"><p>Coke</p></a>
+            <a href="#myPanel28"><p>Sprite</p></a>
+            <a href="#myPanel29"><p>Solo</p></a>
+            <a href="#myPanel30"><p>Orange juice</p></a>
+            <a href="#myPanel31"><p>Apple juice</p></a>
+            <a href="#myPanel32"><p>Fanta</p></a>
+            <a href="#myPanel33"><p>Beer</p></a>
+        </div>
+    <div data-role="footer">
+    	<h2>&copy; Gavin 2015</h2>
+    </div>
+	</div>
+</div>
+<!--This is the page where customer could find the detils of this restaurant and make a reservation-->
+<div data-role="page" id="page5" data-theme="d">
+	<div data-role="header">
+        <h1>Gavin's restaurant</h1>
+	</div>
+    <div role="main" class="ui-content">
+		<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="#page1">Home</a>
+				</li>
+				<li>
+					<a href="#page4">Menu</a>
+				</li>
+				<li>
+					<a href="#page5">Reservations</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="tel:0452355069">Call</a>
+				</li>
+				<li>
+					<a href="#page2" >Feedback</a>
+				</li>
+				<li>
+					<a href="#page3">About us</a>
+				</li>
+			</ul>
+		</div>
+		<h1 align="center"><font color= "#ff8000">Welcom to The Taste Of Home</font></h1>
+        <!--this is the details of this restaurant-->
+		<h2>Opening Hours</h2>
+        <p>Monday-Friday:10:00am-10:00pm</p>
+        <p>Weekend:5:00pm-10:00pm</p>
+        <h2>Address</h2>
+        <p>11 farleigh avenue, Burwood, VIC3125</p>
+		<!--the google map of the address of this restaurant-->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.6382876973944!2d145.122638!3d-37.845352999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad640890b96e7a1%3A0x466d8292699e111b!2s11+Farleigh+Ave%2C+Burwood+VIC+3125!5e0!3m2!1szh-CN!2sau!4v1439287380608"
+		width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <!--customer can make a reservation here-->
+		<h2>Reservation</h2>
+        <p>To make a reservation please call us at</p>
+        <h3><em>0452355069</em></h3>
+		<p>or fill out the following reservation box and we will contact you with availability as soon as possible:</p>
+        <!--customer can enter their information and send massage-->
+		<form>
+        <textarea name="name" id="name" placeholder="name" ></textarea>
+        <textarea name="Email" id="Email" placeholder="Email" ></textarea>
+        <textarea name="massage" id="massage" placeholder="massage" ></textarea>    
+        </form>
+        <a href="#page6" class="ui-btn">Submit</a>
+	</div>
+    <div data-role="footer">
+		<h2>&copy; Gavin 2015</h2>
+    </div>
+ </div>       
+<!--after reservation, user can back to homepage-->
+ <div data-role="page" id="page6" data-theme="d">
+	<div data-role="header">
+        <h1>Gavin's restaurant</h1>
+    </div>
+   	<div data-role="main" class="ui-content">
+    	<h1 align="center">Thaks for your reservation</h1>
+        <a href="#page1" class="ui-btn">Back to Home</a>
+	</div>
+    <div data-role="footer">
+		<h2>&copy; Gavin 2015</h2>
+    </div>
+</div>
+</body>
+</html>
